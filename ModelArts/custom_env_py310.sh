@@ -1,9 +1,6 @@
 #!/bin/bash
-# Ask python version
-read -p "Specify the Python version you need:" varpython
-echo Python $varpython is an amazing choice
 #Create env
-conda create --quiet --yes -n my-env python=$varpython
+conda create --quiet --yes -n my-env python=3.10.0
 #source to env
 source /home/ma-user/anaconda3/bin/activate /opt/conda/envs/my-env
 #Mandatory package
